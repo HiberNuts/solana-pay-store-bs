@@ -24,6 +24,7 @@ export default function handler(req, res) {
       console.error(error);
       res.status(500).json({ error: "error adding product" });
       return;
+      
     }
   } else {
     res.status(405).send(`Method ${req.method} not allowed`);
