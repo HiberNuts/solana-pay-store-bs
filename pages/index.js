@@ -59,7 +59,6 @@ const App = () => {
             </button>
           )}
         </header>
-
         <main>
           {creating && <CreateProduct />}
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
